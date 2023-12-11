@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand');
- :root {
+
+:root {
     --white: #ddd;
     --dark: #111;
     --darkGrey: #474b4f;
@@ -17,6 +18,7 @@
 
 body {
     line-height: 1.6;
+    border: 2px solid green;
 }
 
 img {
@@ -26,6 +28,8 @@ img {
 
 ul li {
     list-style: none;
+    /* border: 2px solid red; */
+    width: 120px;
 }
 
 a {
@@ -77,15 +81,14 @@ p {
 }
 
 .active {
-    color: var(--lightGreen)!important;
+    color: var(--lightGreen) !important;
 }
 
-
 /* ---------- HEADER STYLING ----------- */
-
 .header {
-    min-height: 90vh;
-    background: linear-gradient(rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url("/Images/Header1.jpg") center/cover no-repeat;
+    /* border: 2px solid red; */
+    min-height: 50vh;
+    background: linear-gradient(rgb(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url("/portfolio.website/Images/Header1.jpg") center/cover no-repeat;
     color: #fff;
 }
 
@@ -191,7 +194,7 @@ p {
 .about-content h2 {
     color: rgba(81, 179, 25, 0.92);
     text-align: center;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     font-size: 45px;
 }
 
@@ -247,7 +250,7 @@ blockquote span {
 
 .social-icons ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around
 }
 
 .social-icons ul .insta:hover {
@@ -260,18 +263,10 @@ blockquote span {
     background: rgb(19, 62, 233);
 }
 
-
 /* *************** End of Header *************** */
-
-
 /* *************** Main Section *************** */
-
-
 /* *************** index.html *************** */
-
-
 /* ------ Section One -------- */
-
 .section-one {
     /* border: 2px solid green; */
     flex-wrap: wrap-reverse;
@@ -283,7 +278,7 @@ blockquote span {
     /* border: 2px solid aqua; */
     height: 100vh;
     /* width: 80vh; */
-    background: url("/Images/Project-main.jpg") center/cover no-repeat;
+    background: url("/portfolio.website/Images/Project-main.jpg") center/cover no-repeat;
     box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.1);
@@ -327,13 +322,12 @@ blockquote span {
 .work-imgs {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
 }
 
 .work-img-1 {
-    /* border: 2px solid red; */
     height: 300px;
-    background-image: url("/Images/Image1.jpg");
+    background-image: url("/portfolio.website/Images/Image1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -343,7 +337,7 @@ blockquote span {
 .work-img-2 {
     /* border: 2px solid rgb(60, 0, 255); */
     height: 300px;
-    background-image: url("/Images/Image2.jpg");
+    background-image: url("/portfolio.website/Images/Image2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -354,11 +348,10 @@ blockquote span {
     box-shadow: 0 0 15px rgb(28, 29, 29);
     -webkit-box-shadow: 0 0 15px rgb(54, 237, 18);
     -moz-box-shadow: 0 0 15px rgb(30, 30, 27);
+    transform: scale(1.);
 }
 
-
 /* ------ Section Two -------- */
-
 .section-two {
     margin: 40px 0;
 }
@@ -380,6 +373,7 @@ blockquote span {
     /* border: 2px solid blue; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px
 }
 
 .insta-imgs>div {
@@ -404,9 +398,7 @@ blockquote span {
     opacity: 1;
 }
 
-
 /* section three */
-
 .section-three {
     margin: 40px 0;
 }
@@ -440,9 +432,7 @@ blockquote span {
     text-transform: uppercase;
 }
 
-
 /* ************** Footer styling *************** */
-
 .footer {
     background: var(--dark);
     color: #fff;
@@ -466,11 +456,12 @@ blockquote span {
 }
 
 .subs {
-    width: 350px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px auto;
+    /* flex-direction: column; */
 }
 
 .subs i {
@@ -486,10 +477,10 @@ blockquote span {
     font-size: 16px;
     padding: 0 5px;
     outline: 0;
-    color: #fff;
+    color: #1ec0b3;
 }
 
-.subs button {
+.sub-button {
     flex: 30%;
     font-size: 15px;
     padding: 15px 0;
@@ -498,9 +489,16 @@ blockquote span {
     border: none;
     transition: var(--transition);
     cursor: pointer;
+    border-radius: 5%;
 }
 
-.subs button:hover {
+.sub-button button {
+    /* color: red; */
+    border: none;
+    background: #86c232;
+}
+
+.sub-button :hover {
     color: #fff;
 }
 
@@ -509,12 +507,8 @@ blockquote span {
     font-size: 14px;
 }
 
-
 /* ********** Media Queris ***********/
-
-
 /* section five */
-
 .section-five {
     margin: 40px 0;
 }
@@ -558,7 +552,7 @@ blockquote span {
 }
 
 .contact-bottom {
-    margin-top: 50p!important;
+    margin-top: 50p !important;
 }
 
 .form input[type="text"],
@@ -574,32 +568,39 @@ blockquote span {
 }
 
 @media(min-width: 800px) {
+
     /* section two */
     .insta-imgs {
         grid-template-columns: repeat(4, 1fr);
         /* grid-gap: .5rem; */
     }
+
     /* section threee */
     .gallery {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
     /* section four */
 }
 
 @media(min-width: 992px) {
+
     /* header and footer */
     .nav-section {
         display: flex;
         justify-content: space-between;
     }
+
     .navBtn {
         display: none;
     }
+
     .brand-and-navBtn {
         flex: 0 0 10%;
         background: none;
     }
+
     .top-nav {
         flex: 0 1 80%;
         display: flex;
@@ -609,16 +610,20 @@ blockquote span {
         transform: translateY(0);
         background-color: transparent;
     }
+
     .top-nav ul {
         display: flex;
     }
+
     .top-nav ul li {
         margin-right: 30px;
         margin-left: 30px;
     }
+
     .about {
         margin-top: 0;
     }
+
     .search-icon {
         flex: 0 0 10%;
         display: block;
@@ -629,13 +634,16 @@ blockquote span {
         cursor: pointer;
         transition: var(--transition);
     }
+
     .search-icon i:hover {
         transform: scale(1.2);
     }
+
     .contact-middle {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 3px;
     }
+
     .contact-bottom {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -644,21 +652,26 @@ blockquote span {
 }
 
 @media(min-width:1000px) {
+
     /* section one */
     .section-one .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 50px;
     }
+
     .sec-one-left {
         align-self: center;
     }
+
     .work-content {
         margin-top: 0;
     }
+
     .sec-one-left {
         height: 100%;
     }
+
     /* footer */
     .footer-container {
         display: grid;
@@ -668,12 +681,14 @@ blockquote span {
 }
 
 @media (min-width:1200px) {
+
     /* footer */
     .footer-container div {
         width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
+
     /* section three */
     .gallery {
         display: grid;
@@ -685,46 +700,55 @@ blockquote span {
     .header {
         padding-bottom: 30px;
     }
+
     .social-icons {
-        display: none;
+        /* display: none; */
+        /* width: 10px; */
+        margin-left: 25px;
     }
+
     .about-content h3 {
         width: 100%;
     }
+
     .about-content blockquote {
         font-size: 16px;
         width: 100%;
     }
+
     .subs {
-        width: 200px;
+        width: 300px;
     }
-    .subs i {
-        display: none;
-    }
+
     .subs button {
         padding-left: 8px;
         padding-right: 8px;
     }
+
     h2 {
-        font-size: 30px!important;
+        font-size: 30px !important;
     }
+
     h3 {
-        font-size: 20px!important;
+        font-size: 20px !important;
     }
+
     p {
         font-size: 15px;
     }
+
     .btn {
         font-size: 14px;
         padding: 8px 0;
     }
+
     .work-imgs {
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
     }
 }
 
-@media ( min-width: 678px) {
+@media (min-width: 678px) {
     .contact-middle {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

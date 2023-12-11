@@ -8,7 +8,7 @@
     <title>Photography Site</title>
     <link rel="stylesheet" href="codes/portfolio.css">
     </abbr>
-
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <!-- <link rel="stylesheet" href="https://fonts. googleapis.com/css?family=Trirong"> -->
     <script src="https://kit.fontawesome.com/9afe0efa06.js" crossorigin="anonymous"></script>
 </head>
@@ -24,30 +24,46 @@
                     <i class="fas fa-eye"></i>
                 </span>
             </div>
-
             <!-- navigation menu -->
             <nav class="top-nav">
                 <ul>
-                    <li><a href="/index.html" class="active">Home</a></li>
-                    <li><a href="/codes/gallery.html"> Gallery</a></li>
-                    <li><a href="/codes/contact.html">Contact</a></li>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="./codes/gallery.html"> Gallery</a></li>
+                    <li><a href="./codes/contact.html">Contact</a></li>
                 </ul>
             </nav>
             <span class="search-icon">
                 <i class="fas fa-search"></i>
             </span>
         </div>
-
         <div class="container about">
             <div class="about-content">
                 <div class="about-img flex">
-                    <img src="/Images/About-img.jpg" alt="Photographer img">
+                    <img src="./Images/About-img.jpg" alt="Photographer img">
                     <!-- width="30%" height="20%" -->
                 </div>
-                <h2>I'm Kartiken Rawat</h2>
+                <h2 id="app"></h2>
+                <script>
+                    var app = document.getElementById('app');
+                    var typewriter = new Typewriter(app, {
+                        loop: true
+                    });
+                    typewriter.typeString('Hello Guys!')
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString("I'm ATKEAWKN")
+                        .pauseFor(500)
+                        .deleteChars(8)
+                        .typeString('<strong style="color: #008b8b;">Kartiken Rawat..</strong>')
+                        .pauseFor(2500)
+                        .start();
+                </script>
                 <h3>Photographer | Traveller</h3>
                 <blockquote>
-                    "Photography is the art of capturing and processing light using a sensor or film. But the essence of photography is to treasure moments and share them with the world. Quite simple, but the action itself is capable of changing people's perceptions."
+                    "Photography is the art of capturing and processing light using a sensor or film. But the
+                    essence of
+                    photography is to treasure moments and share them with the world. Quite simple, but the action
+                    itself is capable of changing people's perceptions."
                     <span>-Google😁</span>
                 </blockquote>
             </div>
@@ -62,7 +78,6 @@
         </div>
     </header>
     <!-- End of header -->
-
     <!-- main -->
     <section class="section-one">
         <div class="container">
@@ -70,15 +85,18 @@
                 <!-- image here -->
                 <div>
                     <h3>Lorem ipsum dolor sit amet</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi ipsum corporis necessitatibus dolorum quod deleniti voluptate rerum officiis iste porro maiores iure, vel provident!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi ipsum corporis
+                        necessitatibus dolorum quod deleniti voluptate rerum officiis iste porro maiores iure, vel
+                        provident!</p>
                     <a href="#" class="btn">View all</a>
                 </div>
             </div>
-
             <div class="sec-one-right">
                 <div class="work-content">
                     <h3>AMAZING TEAM WITH FRIENDS</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi ipsum corporis necessitatibus dolorum quod deleniti voluptate rerum officiis iste porro maiores iure, vel provident!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi excepturi ipsum corporis
+                        necessitatibus dolorum quod deleniti voluptate rerum officiis iste porro maiores iure, vel
+                        provident!</p>
                     <a href="#" class="btn">View all</a>
                 </div>
                 <div class="work-imgs">
@@ -88,19 +106,19 @@
                     <div class="work-img-2">
                         <!-- Image2 -->
                     </div>
+                    <div class="overlay overlayBottom"></div>
                 </div>
                 <h3>"Taking an image,freezing a moment,reveals how rich reality truly is"</h3>
             </div>
         </div>
     </section>
-
     <section class="section-two">
         <div class="container">
             <h2>FOLLOW ON INSTAGRAM</h2>
-              <span> <a href="https://www.instagram.com/kartiken_jpg"> @kartiken.jpg</a></span>
+            <span> <a href="https://www.instagram.com/kartiken_jpg"> @kartiken.jpg</a></span>
             <div class="insta-imgs">
                 <div>
-                    <img src="Images/Insta1.jpg">
+                    <img src="./Images/Insta1.jpg">
                     <div class="icon-overlay flex">
                         <i class="fab fa-instagram"></i>
                     </div>
@@ -127,31 +145,34 @@
         </div>
     </section>
     <!-- end of main -->
-
     <!-- footer -->
     <footer class="footer">
         <div class="footer-container container">
             <div>
                 <h2>KARTIKEN RAWAT</h2>
-                <p>ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim quisquam doloribus sint sunt aspernatur, ipsam illum quo at illo qui explicabo velit dignissimos cum cupiditate aut pariatur nihil voluptas nam harum amet maiores ipsa. Vero
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Nostrum enim quisquam doloribus sint sunt
+                    aspernatur, ipsam illum quo at illo qui explicabo velit dignissimos cum cupiditate aut pariatur
+                    nihil voluptas nam harum amet maiores ipsa. Vero
                     labore repellendus sapiente necessitatibus.</p>
             </div>
             <div>
                 <h3>Free Subscription!</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus commodi quisquam iste doloribus laboriosam, assumenda recusandae dolor a esse iure corrupti quas atque neque provident deserunt et molestiae hic vero.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus commodi quisquam iste doloribus
+                    laboriosam, assumenda recusandae dolor a esse iure corrupti quas atque neque provident deserunt et
+                    molestiae hic vero.</p>
                 <div class="subs">
                     <i class="fas fa-envelope"></i>
                     <input type="email" id="email" placeholder="Email Address">
-                    <button type="submit">SUBSCRIBE</button>
                 </div>
+                <span class="sub-button">
+                    <button type="submit">SUBSCRIBE</button>
+                </span>
             </div>
         </div>
         <p>&copy; kartiken_jpg . SIMPLE AND NICE TEMPLATE</p>
     </footer>
     <!-- end of footer -->
-
-
-    <script src="/codes/script.js"></script>
+    <script src="/portfolio.website/codes/script.js"></script>
 </body>
 
 </html>
